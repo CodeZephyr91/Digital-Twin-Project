@@ -1,0 +1,7 @@
+2026-10-26 15:00:00.000 [gNB-SYS] INFO: euGNB service v2.4.1 initialized on 192.168.35.15
+2026-10-26 15:00:02.100 [gNB-NG] INFO: SCTP connection established to AMF at 192.168.35.35:38412
+2026-10-26 15:00:02.150 [gNB-NG] INFO: NGSetupRequest sent (gNB-ID: 0x00012, PLMN: 001-01)
+2026-10-26 15:00:02.200 [gNB-NG] INFO: NGSetupResponse received. State: CONNECTED
+2026-10-26 15:00:05.000 [gNB-PHY] INFO: Cell 1 activated on NR ARFCN 632544 (Band n78, 3.5 GHz, BW 40MHz)
+2026-10-26 15:30:01.120 [gNB-RRC] INFO: CRNTI 0x4a12 connected, state RRC_CONNECTED
+2026-10-26 15:32:10.500 [gNB-RRC] INFO: CRNTI 0x4a15 connected, state RRC_CONNECTED

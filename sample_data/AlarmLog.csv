@@ -1,0 +1,5 @@
+timestamp,severity,alarm_id,component,description,status
+2026-10-26 15:00:01,INFO,ALM-001,SYSTEM,euGNB Stack started,CLEARED
+2026-10-26 15:00:02,INFO,ALM-002,NGAP,NG Interface to AMF 192.168.35.35 UP,CLEARED
+2026-10-26 15:00:05,INFO,ALM-003,RADIO,NR Cell 1 Transceiver UP (Pwr: 24dBm),CLEARED
+2026-10-26 15:15:30,WARNING,ALM-014,ROUTING,Default gateway 192.168.35.1 ICMP unreachable from radio plane,ACTIVE

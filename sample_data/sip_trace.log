@@ -1,0 +1,147 @@
+2026-10-26 15:30:03.100 IP 10.46.0.8.5060 > 192.168.35.35.5060: SIP: REGISTER sip:192.168.35.35 SIP/2.0
+Via: SIP/2.0/UDP 10.46.0.8:5060;rport;branch=z9hG4bK-reg1
+From: <sip:901@192.168.35.35>;tag=tag-901reg
+To: <sip:901@192.168.35.35>
+Call-ID: reg-call-901-a1b2c3@10.46.0.8
+CSeq: 1 REGISTER
+Contact: <sip:901@10.46.0.8:5060>
+Expires: 3600
+Content-Length: 0
+
+2026-10-26 15:30:03.120 IP 192.168.35.35.5060 > 10.46.0.8.5060: SIP: SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 10.46.0.8:5060;rport=5060;branch=z9hG4bK-reg1
+From: <sip:901@192.168.35.35>;tag=tag-901reg
+To: <sip:901@192.168.35.35>;tag=ims-tag-401
+Call-ID: reg-call-901-a1b2c3@10.46.0.8
+CSeq: 1 REGISTER
+WWW-Authenticate: Digest realm="192.168.35.35", nonce="4f8a3c91"
+Content-Length: 0
+
+2026-10-26 15:30:03.150 IP 10.46.0.8.5060 > 192.168.35.35.5060: SIP: REGISTER sip:192.168.35.35 SIP/2.0
+Via: SIP/2.0/UDP 10.46.0.8:5060;rport;branch=z9hG4bK-reg2
+From: <sip:901@192.168.35.35>;tag=tag-901reg
+To: <sip:901@192.168.35.35>
+Call-ID: reg-call-901-a1b2c3@10.46.0.8
+CSeq: 2 REGISTER
+Authorization: Digest username="901", realm="192.168.35.35", nonce="4f8a3c91", response="9a2df4"
+Contact: <sip:901@10.46.0.8:5060>
+Expires: 3600
+Content-Length: 0
+
+2026-10-26 15:30:03.170 IP 192.168.35.35.5060 > 10.46.0.8.5060: SIP: SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.46.0.8:5060;rport=5060;branch=z9hG4bK-reg2
+From: <sip:901@192.168.35.35>;tag=tag-901reg
+To: <sip:901@192.168.35.35>;tag=ims-tag-200ok
+Call-ID: reg-call-901-a1b2c3@10.46.0.8
+CSeq: 2 REGISTER
+P-Associated-URI: <sip:901@192.168.35.35>
+Contact: <sip:901@10.46.0.8:5060>;expires=3600
+Content-Length: 0
+
+2026-10-26 15:32:12.100 IP 10.46.0.10.5060 > 192.168.35.35.5060: SIP: REGISTER sip:192.168.35.35 SIP/2.0
+Via: SIP/2.0/UDP 10.46.0.10:5060;rport;branch=z9hG4bK-reg902
+From: <sip:902@192.168.35.35>;tag=tag-902reg
+To: <sip:902@192.168.35.35>
+Call-ID: reg-call-902-b2c3d4@10.46.0.10
+CSeq: 1 REGISTER
+Contact: <sip:902@10.46.0.10:5060>
+Expires: 3600
+Content-Length: 0
+
+2026-10-26 15:32:12.140 IP 192.168.35.35.5060 > 10.46.0.10.5060: SIP: SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.46.0.10:5060;rport=5060;branch=z9hG4bK-reg902
+From: <sip:902@192.168.35.35>;tag=tag-902reg
+To: <sip:902@192.168.35.35>;tag=ims-tag-902ok
+Call-ID: reg-call-902-b2c3d4@10.46.0.10
+CSeq: 1 REGISTER
+P-Associated-URI: <sip:902@192.168.35.35>
+Contact: <sip:902@10.46.0.10:5060>;expires=3600
+Content-Length: 0
+
+2026-10-26 15:35:00.100 IP 10.46.0.8.5060 > 192.168.35.35.5060: SIP: INVITE sip:902@192.168.35.35 SIP/2.0
+Via: SIP/2.0/UDP 10.46.0.8:5060;rport;branch=z9hG4bK-inv901
+From: <sip:901@192.168.35.35>;tag=calltag-901
+To: <sip:902@192.168.35.35>
+Call-ID: call-901-to-902-session@10.46.0.8
+CSeq: 100 INVITE
+Contact: <sip:901@10.46.0.8:5060>
+Content-Type: application/sdp
+Content-Length: 140
+
+2026-10-26 15:35:00.120 IP 192.168.35.35.5060 > 10.46.0.8.5060: SIP: SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.46.0.8:5060;rport=5060;branch=z9hG4bK-inv901
+From: <sip:901@192.168.35.35>;tag=calltag-901
+To: <sip:902@192.168.35.35>
+Call-ID: call-901-to-902-session@10.46.0.8
+CSeq: 100 INVITE
+Content-Length: 0
+
+2026-10-26 15:35:00.130 IP 192.168.35.35.5060 > 10.46.0.10.5060: SIP: INVITE sip:902@10.46.0.10:5060 SIP/2.0
+Via: SIP/2.0/UDP 192.168.35.35:5060;branch=z9hG4bK-core-route
+From: <sip:901@192.168.35.35>;tag=calltag-901
+To: <sip:902@192.168.35.35>
+Call-ID: call-901-to-902-session@10.46.0.8
+CSeq: 100 INVITE
+Contact: <sip:901@10.46.0.8:5060>
+Content-Type: application/sdp
+Content-Length: 140
+
+2026-10-26 15:35:00.220 IP 10.46.0.10.5060 > 192.168.35.35.5060: SIP: SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 192.168.35.35:5060;branch=z9hG4bK-core-route
+From: <sip:901@192.168.35.35>;tag=calltag-901
+To: <sip:902@192.168.35.35>;tag=calltag-902
+Call-ID: call-901-to-902-session@10.46.0.8
+CSeq: 100 INVITE
+Content-Length: 0
+
+2026-10-26 15:35:00.230 IP 192.168.35.35.5060 > 10.46.0.8.5060: SIP: SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 10.46.0.8:5060;rport=5060;branch=z9hG4bK-inv901
+From: <sip:901@192.168.35.35>;tag=calltag-901
+To: <sip:902@192.168.35.35>;tag=calltag-902
+Call-ID: call-901-to-902-session@10.46.0.8
+CSeq: 100 INVITE
+Content-Length: 0
+
+2026-10-26 15:35:03.450 IP 10.46.0.10.5060 > 192.168.35.35.5060: SIP: SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.35.35:5060;branch=z9hG4bK-core-route
+From: <sip:901@192.168.35.35>;tag=calltag-901
+To: <sip:902@192.168.35.35>;tag=calltag-902
+Call-ID: call-901-to-902-session@10.46.0.8
+CSeq: 100 INVITE
+Contact: <sip:902@10.46.0.10:5060>
+Content-Type: application/sdp
+Content-Length: 140
+
+2026-10-26 15:35:03.460 IP 192.168.35.35.5060 > 10.46.0.8.5060: SIP: SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.46.0.8:5060;rport=5060;branch=z9hG4bK-inv901
+From: <sip:901@192.168.35.35>;tag=calltag-901
+To: <sip:902@192.168.35.35>;tag=calltag-902
+Call-ID: call-901-to-902-session@10.46.0.8
+CSeq: 100 INVITE
+Contact: <sip:902@10.46.0.10:5060>
+Content-Type: application/sdp
+Content-Length: 140
+
+2026-10-26 15:35:03.500 IP 10.46.0.8.5060 > 192.168.35.35.5060: SIP: ACK sip:902@192.168.35.35 SIP/2.0
+Via: SIP/2.0/UDP 10.46.0.8:5060;rport;branch=z9hG4bK-ack901
+From: <sip:901@192.168.35.35>;tag=calltag-901
+To: <sip:902@192.168.35.35>;tag=calltag-902
+Call-ID: call-901-to-902-session@10.46.0.8
+CSeq: 100 ACK
+Content-Length: 0
+
+2026-10-26 15:35:20.100 IP 10.46.0.8.5060 > 192.168.35.35.5060: SIP: BYE sip:902@192.168.35.35 SIP/2.0
+Via: SIP/2.0/UDP 10.46.0.8:5060;rport;branch=z9hG4bK-bye901
+From: <sip:901@192.168.35.35>;tag=calltag-901
+To: <sip:902@192.168.35.35>;tag=calltag-902
+Call-ID: call-901-to-902-session@10.46.0.8
+CSeq: 101 BYE
+Content-Length: 0
+
+2026-10-26 15:35:20.120 IP 192.168.35.35.5060 > 10.46.0.8.5060: SIP: SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.46.0.8:5060;rport=5060;branch=z9hG4bK-bye901
+From: <sip:901@192.168.35.35>;tag=calltag-901
+To: <sip:902@192.168.35.35>;tag=calltag-902
+Call-ID: call-901-to-902-session@10.46.0.8
+CSeq: 101 BYE
+Content-Length: 0

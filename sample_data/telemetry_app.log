@@ -1,0 +1,6 @@
+2026-10-26 15:30:00.000 [TELEMETRY] INFO: Host 192.168.35.6 CPU: 14.2%, MEM: 38.5%, Disk: 42%
+2026-10-26 15:30:00.050 [TELEMETRY] INFO: Connected UEs count: 1 (UE 901)
+2026-10-26 15:32:15.000 [TELEMETRY] INFO: Connected UEs count: 2 (UE 901, UE 902)
+2026-10-26 15:35:05.000 [TELEMETRY] INFO: Active SIP calls: 1 (901 -> 902, Codec: AMR-WB, Bitrate: 23.85 kbps)
+2026-10-26 15:35:21.000 [TELEMETRY] INFO: Active SIP calls: 0, Total calls today: 14, Call success rate: 98.2%
+2026-10-26 15:35:30.000 [TELEMETRY] WARN: External portal gateway 192.168.35.1 unreachable, sync deferred
